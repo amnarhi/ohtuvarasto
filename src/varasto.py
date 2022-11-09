@@ -3,7 +3,7 @@ class Varasto:
         if tilavuus > 0.0:
             self.tilavuus = tilavuus
         else:
-            # virheellinen, nollataan tilavuus
+            # virheellinen, nollataan
             self.tilavuus = 0.0
 
         if alku_saldo < 0.0:
@@ -13,7 +13,7 @@ class Varasto:
             # mahtuu
             self.saldo = alku_saldo
         else:
-            # täyteen ja ylimäärä hukkaan!
+            # täyteen ja ylimäärä hukkaan
             self.saldo = tilavuus
 
     # huom: ominaisuus voidaan myös laskea. Ei tarvita erillistä kenttää viela_tilaa tms.
